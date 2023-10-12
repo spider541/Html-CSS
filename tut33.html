@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container{
+            height: 486px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card{
+            padding: 23px 12px;
+            margin: 23px 12px;
+            /* border: 2px solid red; */
+            background-color: bisque;
+            /* box-shadow: x-ofset y-ofset color ; */
+            /* box-shadow: 12px 13px green; */
+
+            /* for negative means upper portion */
+            /* box-shadow: -12px -13px green; */
+
+            /* x-ofset y-ofset blur  */
+            /* box-shadow: 7px 5px 18px green; */
+            
+            /* for negative means upper */
+            /*box-shadow: -7px -5px 18px green; */
+            
+            /* x-ofset y-ofset blur spread */
+            /* box-shadow: -7px -5px 12px 3px green; */
+            
+            /* rgba can use and alpha take the darkness of colour */
+            /* box-shadow: -7px -5px 12px 3px rgba(85,88,153,0.8); */
+            
+            /* inset-mean box shadow will be inward */
+            /* box-shadow: inset -5px 12px 3px rgba(185, 49, 179, 0.9); */
+
+            /* Multiple box shadow */
+            box-shadow: 3px 4px 7px green, 5px 7px 18px yellow;
+        }
+        .card h2{
+            /* text-shadow: 3px 3px red; */
+            /* text-shadow: 3px 3px 4px red; */
+            text-shadow: -3px -3px 4px red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card" id="card-1">
+            <h2>Card1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, odio ipsa tempora pariatur temporibus laudantium explicabo inventore, eveniet neque, tenetur optio ab. Nemo facere maiores magnam ex ad quaerat pariatur atque necessitatibus laboriosam aliquid?</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>Card2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, odio ipsa tempora pariatur temporibus laudantium explicabo inventore, eveniet neque, tenetur optio ab. Nemo facere maiores magnam ex ad quaerat pariatur atque necessitatibus laboriosam aliquid?</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, odio ipsa tempora pariatur temporibus laudantium explicabo inventore, eveniet neque, tenetur optio ab. Nemo facere maiores magnam ex ad quaerat pariatur atque necessitatibus laboriosam aliquid?</p>
+        </div>
+    </div>
+</body>
+
+</html>

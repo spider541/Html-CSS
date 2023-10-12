@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Tutorial</title>
+    <style>
+        .container{
+            border:2px solid black;
+            width: 100%;
+            height: 550px;
+            
+            /* Initialize the container as a flexbox */
+            display: flex;  
+
+            /* Flex proparties for flex container */
+
+            /* by default flex-direction is row; */
+            flex-direction:row;      
+            /* flex-direction:column;    */
+            /* flex-direction:row-reverse;    */
+            /* flex-direction:column-reverse;     */
+
+            /* now we want to wrap the boxes */
+            /* default is set to nowrap */
+            flex-wrap: wrap;   
+            /* flex-wrap: wrap-reverse; */
+
+            /* Short hand for fle-direction and flex-wrap */
+            /* flex-flow: row-reverse wrap; */
+
+            /* justify-content: for justify the content in horizontally */
+
+             justify-content: center;
+            /* justify-content:space-between; */
+            /* justify-content:space-evenly; */
+            /* justify-content:space-around;  */
+
+            /* align-items: for align the content in vertically */
+            align-items: center; 
+            /* align-items: flex-end; */
+            /* align-items:stretch;  */
+            
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+        }
+        #box1{
+            /* flex properties for flex items */
+            /* higher the order, latter it will show in the container */
+            /* order: 2; */
+            
+            /* grow property will increase the element fasster than the other */
+            /* flex-grow: 2; */
+            /* reverse of grow,shrink faster than the other */
+            /* flex-shrink: 2; */
+        }
+        #box2{
+            /* flex-grow: 3;
+            flex-shrink: 3; */
+            /* now a short hand */
+            /* flex:2 2 100px;  */ /*3rd one flex basis*/
+            /* align-self:flex-end; */
+            /* align-self:flex-start; */
+            /* align-self:center; */
+        }
+
+        #box3{
+            /* order: 40; */
+            /* if we want to change the default value use flex-basis: ; */
+            /* flex-basis: 300px; */
+            /* when flex-directionis row; it will control the width */
+            /* when flex-directionis column; it will control the height */
+        }
+    </style>
+</head>
+<body>
+    <h1>This is Flex Tutorial</h1>
+    <div class="container">
+        <div class="box" id="box1">Box1</div>
+        <div class="box" id="box2">Box2</div>
+        <div class="box" id="box3">Box3</div>
+        <!-- <div class="box" id="box4">Box4</div>
+        <div class="box" id="box5">Box5</div>
+        <div class="box" id="box6">Box6</div> -->
+    </div>
+</body>
+</html>

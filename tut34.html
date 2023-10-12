@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables/Custom Properties</title>
+    <style>
+        :root{
+            /* This is how we define global variables */
+            --max-h : 350px;
+            --max-w: 1100px;
+            --bg-color:red;
+        }
+        .box{
+            /* This is how we define variables  */
+            --box-color: blue;
+            --box-shadow: rgb(108, 214, 191);
+            width: 200px;
+            height: 200px;
+            background-color: var(--box-color);
+            color: white;
+            /* border: 2px solid yellowgreen; */
+            box-shadow: 7px 7px 12px var(--box-shadow);
+            font-weight: bold;
+            margin: 14px 10px;
+        }
+        .container{
+            /* Using global variable  */
+            background-color: var(--bg-color);
+            height: var(--max-h);
+            width: var(--max-w);
+            display: flex;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            /* It is not work bcz the variable is local-variable */
+            /* background-color: var(--box-shadow); */
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <div class="container">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+    </div>
+</body>
+</html>

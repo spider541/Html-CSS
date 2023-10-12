@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors & more designing</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: aquamarine;
+            padding: 34px;
+            margin: 34px auto;
+            width: 690px;
+        }
+        a{
+            text-decoration: none;
+            /* color: black; */
+        }
+        a:active{
+            background-color: gray;
+        }
+        a:hover{
+            color: rgb(0, 5, 2);
+            background-color: #db9b52;
+            /* text-decoration: underline; */
+        }
+        a:visited{
+            background-color: blue;
+            color: wheat;
+        }
+        .btn{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            color: white;
+            background-color: #b16d1d;
+            padding: 6px;
+            border: none;
+            cursor:pointer;
+            font-size: 13px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi impedit numquam totam ducimus nesciunt culpa, facere commodi vero voluptatum veritatis illo officiis praesentium tempora tenetur quo reprehenderit quidem dicta, ipsum quod modi ipsam. Suscipit.</p>
+        <a href="https://picachu.com" class="btn" target="_blank">Read more</a>
+        <button class="btn">Contact Us</button>
+    </div> 
+</body>
+</html>

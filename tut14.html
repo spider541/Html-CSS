@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /* This is Element Selector */
+        p {
+            color: blue;
+            border: 2px solid red;
+        }
+
+        /* This is ID Selector */
+        #myRed {
+            color: red;
+            background-color: black;
+        }
+
+        /* This is Class Selector */
+        .redElement {
+            color: greenyellow;
+        }
+
+        .bgBlack {
+            background-color: black;
+        }
+
+        /* This is Grouping Selector. */
+        span,
+        footer {
+            border: 2px solid green;
+            background-color: bisque;
+            color: rgb(195, 9, 139);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Learning CSS Selectors.</h2>
+    <p>This is a Paragraph.</p>
+    <p id="myRed">This is another Paragraph.</p>
+    <p>This is yet another Paragraph.</p>
+    <div>
+        <p class="redElement bgBlack">This is under div Paragraph.</p>
+    </div>
+    <span>This is Span.</span>
+    <footer>This is Footer.</footer>
+</body>
+
+</html>

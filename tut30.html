@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        h1{
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        /* Any p that is contained in div */
+        /* div p{
+            background-color: yellow;
+            font-weight: bold;
+        } */
+        
+        /* p is contained by any li which is contained by div */
+        /* div li p{
+            background-color: yellow;
+            font-weight: bold;
+        } */
+
+        /* If p is a direct child of div  */
+        /* div > p{
+            background-color: aquamarine;
+            color: brown;
+            font-weight: bold;
+        } */
+
+        /* If p is right after div i.e p is next sibling of div  */
+        div + p{
+            background-color: black;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>This Is A Tutorial Of More On Selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <p>This is a para under ul.</p>
+                <li class="item"><p>This is a paragraph under li.</p></li>
+                <li>This will not get effected.</li>
+            </ul>
+            <p>This is a paragraph under 2nd div.</p>
+        </div>
+        <p>This is a paragraph under 1st div.</p>
+    </div>
+    <p>This is outer most paragraph.</p>
+</body>
+</html>

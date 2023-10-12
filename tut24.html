@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        /* CSS Position: static(default), relative, absolute, fixed, sticky */
+
+        .container{
+            border: 2px solid black;
+            background-color: bisque;
+            height: 1400px;
+        }
+        .box {
+            border: 2px solid red;
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+
+        #box3 {
+            /* relative:Positions the element relative to it's normal position and will leave a gap at it's normal position  */
+            /* position: relative;
+            top: 34px;
+            left: 21px; */
+
+            /* absolute:Positions the element relative to the parent  */
+            /* position: absolute;
+            top: 34px;
+            left: 21px; */
+            
+            /* fixed:Positions fixed the element relative to the browser window */
+            /* position: fixed;
+            right: 14px;
+            top: 2px; */
+
+            /* sticky:Positions stick the element relative to it's position and right, bottom not apply */
+            position:sticky;
+            top:3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">Chat With Us</div>
+        <div class="box" id="box4">4</div>
+    </div>
+
+</body>
+
+</html>
